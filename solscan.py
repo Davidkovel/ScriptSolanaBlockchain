@@ -7,7 +7,7 @@ from loguru import logger
 
 class SolscanBlockchain:
     def __init__(self):
-        self.api_key = ""
+        self.api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE3NDM4NzM0ODU5MTcsImVtYWlsIjoiZGtvdmVsN0BnbWFpbC5jb20iLCJhY3Rpb24iOiJ0b2tlbi1hcGkiLCJhcGlWZXJzaW9uIjoidjIiLCJpYXQiOjE3NDM4NzM0ODV9.6ANfd62R9A39WcI9Bpg5B1AIEXh_fdQRwKIaK0p-pug"
         self.base_url = "https://pro-api.solscan.io/v2.0/"
         self.session = aiohttp.ClientSession()
         self.headers = {"token": self.api_key}
